@@ -1,0 +1,30 @@
+/* header {
+  background-image: url("css/images/whitneyInNewOrleans.jpg");
+} */
+
+.whit-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("css/images/whitneyInNewOrleans.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.nav-link {
+  color: #fff;
+  opacity: 0.9;
+  margin-top: 0px;
+  font-weight: 300;
+  letter-spacing: 3px;
+  word-spacing: 1px;
+}
+.container h1 {
+  color: #fff;
+  opacity: 0.9;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 1px;
+  margin-top: 20%;
+  font-size: 48px;
+  line-height: 77px;
+}
+
