@@ -1,1 +1,6 @@
-console.log('test');
+const foo = () => {
+  return 'test';
+}
+
+console.log(foo());
+
