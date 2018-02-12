@@ -4,6 +4,8 @@
   "description": "my resume website",
   "main": "index.js",
   "scripts": {
+    "compilecss": "node-sass --source-map true src/css/main.scss dist/css/main.css",
+    "compilecss:prod": "node-sass src/css/main.scss dist/css/main.css",
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "babel src/js --out-dir dist/js --source-maps",
     "transpile:prod": "babel src/js --out-dir dist/js"
@@ -27,6 +29,7 @@
   "devDependencies": {
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.6.1",
-    "babel-preset-es2015": "^6.24.1"
+    "babel-preset-es2015": "^6.24.1",
+    "node-sass": "^4.7.2"
   }
 }
