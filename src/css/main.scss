@@ -1,0 +1,13 @@
+$red: #ff0000;
+
+.whatever {
+  &.foo {
+    color: green;
+  }
+  .something {
+    color: $red;
+  }
+  .another_thing {
+    color: white;
+  }
+}
