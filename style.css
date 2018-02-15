@@ -3,9 +3,9 @@
 } */
 
 .whit-img {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("css/images/whitneyInNewOrleans.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("css/images/whitneyInNewOrleans.jpg");
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
   height: 100vh;
 }
 
@@ -28,3 +28,8 @@
   line-height: 77px;
 }
 
+.education-img {
+  background-image: url("css/images/educationimage.jpeg");
+  background-repeat: no-repeat;
+  background-size: auto;
+}
