@@ -1,5 +1,7 @@
-$red: #ff0000;
-
+$primary: black;
+$secondary: #f0c508e3;
+$font-family-base: 'Nanum Gothic', sans-serif;
+$btn-border-radius: 0;
 // Include parts of Bootstrap
 
 // Required Bootstrap
@@ -14,15 +16,67 @@ $red: #ff0000;
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/utilities";
+@import "node_modules/bootstrap/scss/tooltip";
+@import "node_modules/bootstrap/scss/buttons";
+@import "node_modules/bootstrap/scss/jumbotron";
 
-.whatever {
-  &.foo {
-    color: green;
+/* Main Header */
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/images/whitneyInNewOrleans.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+/* Main Navi */
+.wb-nav {
+  padding: 20px 30px;
+
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden; 
   }
-  .something {
-    color: $red;
+
+  li {
+    display: inline-block;
+    padding: 20px;
+    
+    a {
+      
+      &:link,
+      &:visited {
+        color: $light;
+        font-weight: 100;
+        padding: 8px 0;
+        text-decoration: none;
+        font-size: 120%;
+        border-bottom: 2px solid transparent;
+        transition: border-bottom 0.2s;
+      }
+
+      &:hover, 
+      &:focus {
+          border-bottom: 2px solid $secondary;
+      }
+    }
   }
-  .another_thing {
-    color: white;
+
+}
+
+.wb-header {
+  .jumbotron {
+    background-color: transparent;
+  
+    .btn-outline-secondary {
+      margin-left: 20px; 
+    }
+
+    .lead {
+      font-size: 150%;
+    }
+  
   }
 }
