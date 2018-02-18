@@ -1,11 +1,11 @@
 $primary: black;
-$secondary: #f0c508e3;
+$secondary: rgb(223, 202, 14);
 $font-family-base: 'Nanum Gothic', sans-serif;
 $btn-border-radius: 0;
 // Include parts of Bootstrap
 
 // Required Bootstrap
-@import "node_modules/bootstrap/scss/functions";
+@import "node_modules/bootstrap/scss/functions"; 
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
