@@ -10,7 +10,7 @@
     "compilecss:prod": "node-sass src/css/main.scss dist/css/main.css",
     "copy": "npm run copyhtml && npm run copyvendorjs && npm run copyassets",
     "copyhtml": "copyfiles -f src/views/* dist",
-    "copyvendorjs": "copyfiles -f node_modules/jquery/dist/jquery.js node_modules/bootstrap/dist/js/bootstrap.js node_modules/popper.js/dist/popper.js dist/js",
+    "copyvendorjs": "copyfiles -f node_modules/jquery/dist/jquery.js node_modules/bootstrap/dist/js/bootstrap.js node_modules/popper.js/dist/umd/popper.js dist/js",
     "copyassets": "copyfiles -u 1 'src/assets/**/*' dist",
     "test": "echo \"Error: no test specified\" && exit 1",
     "transpile": "babel src/js --out-dir dist/js --source-maps",
