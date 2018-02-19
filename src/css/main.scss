@@ -1,7 +1,15 @@
+// Ionicon overrides
+$ionicons-font-path: "../assets/fonts";
+// Bootstrap overrides
 $primary: black;
 $secondary: rgb(223, 202, 14);
+$success: #d05b5b;
 $font-family-base: 'Nanum Gothic', sans-serif;
 $btn-border-radius: 0;
+
+// Ionicons
+@import "ionicons/ionicons.scss";
+
 // Include parts of Bootstrap
 
 // Required Bootstrap
@@ -27,6 +35,7 @@ header {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  background-attachment: fixed;
 }
 
 /* Main Navi */
@@ -79,4 +88,43 @@ header {
     }
   
   }
+}
+
+/* About Me Section */
+.about {
+  background-color: #d0c0c0;
+  padding-top: 90px;
+  padding-bottom: 130px;
+
+    .about-title {
+      margin-top: 50px;
+    }
+
+    .about-p {
+      position: center;
+      line-height: 1.6;
+    }
+
+    .row:first-child {
+      margin-bottom: 70px;
+      
+    }
+
+    .about-li {
+      // padding-top: 90px;
+
+      li {
+        list-style-type: none;
+        line-height: 1.6;
+      }
+    }
+
+    /*------- ICONS ------*/
+  .icon-big {
+    font-size: 350%;
+    display: block;
+    color: $success;
+    margin-bottom: 10px;
+    margin-left: 40px;
+}
 }
