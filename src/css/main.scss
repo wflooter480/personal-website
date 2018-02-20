@@ -2,7 +2,7 @@
 $ionicons-font-path: "../assets/fonts";
 // Bootstrap overrides
 $primary: black;
-$secondary: rgb(223, 202, 14);
+$secondary:#EBC11A;
 $success: #d05b5b;
 $font-family-base: 'Nanum Gothic', sans-serif;
 $btn-border-radius: 0;
@@ -92,7 +92,7 @@ header {
 
 /* About Me Section */
 .about {
-  background-color: #d0c0c0;
+  background-color: #e9dfdf;
   padding-top: 90px;
   padding-bottom: 130px;
 
@@ -126,5 +126,41 @@ header {
     color: $success;
     margin-bottom: 10px;
     margin-left: 40px;
+  }
 }
+
+/*Experience Section*/
+
+.experience {
+  background-image: url("../assets/images/yellow_Img.jpg");
+  background: 0.6;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: right top;
+  min-height: 350px;
+  padding-bottom: 100px;
+  
+  h1 {
+    text-align: center;
+    font-size: 300%;
+    padding-top: 80px;
+    text-transform: uppercase;
+    margin-bottom: 40px;    
+  }
+
+  h3 {
+    border-bottom: 1px solid $success;
+    position: center;
+  }
+   .long-copy {
+     margin-left: 27%;
+   }
+   
+   .edu-col li {
+     list-style-type: none;
+     border-bottom: 1px solid $success;
+     padding-bottom: 3px;
+     padding-top: 5px;
+   }
+
 }
