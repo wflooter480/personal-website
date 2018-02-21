@@ -80,7 +80,15 @@ header {
     background-color: transparent;
   
     .btn-outline-secondary {
-      margin-left: 20px; 
+      margin-left: 20px;
+      
+      // a {
+      //   color: $secondary; 
+      // }
+
+      // a:hover {
+      //   color: black;
+      // }
     }
 
     .lead {
