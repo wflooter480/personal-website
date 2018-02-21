@@ -16,14 +16,14 @@
 </head>
 
 <body>
-    <header class="wb-header">
+    <header class="wb-header" id="header">
       <nav class="wb-nav">
         <div class="d-flex justify-content-end">
           <ul>
               <li><a href="#about">About</a></li>
               <li><a href="#experience">Experience</a></li>
               <li><a href="#education">Education</a></li>
-              <li><a href="#resume">Resume</a></li>
+              <li><a href="assets/resume.pdf">Resume</a></li>
               <li><a href="#blog">Journal</a></li>
               <li><a href="#contact">Contact Me</a></li>
           </ul>
@@ -33,8 +33,8 @@
             <div class="container text-light">
               <h1 class="display-4">Hi, I'm Whitney.</h1>
               <p class="lead">I'm learning to code.</p>
-              <button type="button" class="btn btn-secondary"><a href="#about">My Journey</a></button>
-              <button type="button" class="btn btn-outline-secondary">My Resume</button>
+              <a class="btn btn-secondary" href="#about">My Journey</a>
+              <a class="btn btn-outline-secondary" href="assets/resume.pdf">My Resume</a>
             </div>
           </div>
     </header>
@@ -51,7 +51,7 @@
                     much my life’s focus for the next 20 years. I practiced the flute. A lot. After college graduation, 
                     I practiced more, but I also got a 9-5 job to pay the bills. Still played my flute and taught lessons 
                     to some great kids (and adults). Worked a little more. Practiced a little less. Got promoted at work. 
-                    Grew an interest in tech. Quit my job to learn to code. Built this website from scratch. Itching to 
+                    Grew an interest in tech. Quit my job to learn to code. Built this website. Itching to 
                     learn more and make a career change into software development. </p>
               </div>
             </div>
@@ -103,19 +103,26 @@
               
               <div class="col long-copy">
                 <h3>Work Experience</h3>
-                <p>After graduating from music school a decade ago, I have found myself in a rising 
-                  position at a non-profit health insurance company. My goals have always been to 
+                <p>After graduating from music school  over a decade ago, I found myself in a rising 
+                  position at a non-profit health insurance company. 
+
+                  For about 2 1/2 years (2014-2017), I worked on a special team to upgrade one of 
+                  the company most complex software tools. My responsibilities on the project 
+                    were gathering business requirements, communicating and documenting business 
+                    and functional requirements to our software vendor, analyzing and mapping data for 
+                    conversion, and testing the new system and functionality. We worked with 
+                    Jira and in an agile environment. This was an incredible opportunity for me to learn and
+                    grow an insatiable interest in technology. By working on almost the complete product life-cycle,
+                    I no longer wanted to be a user of such technologies, but a <em>builder</em> of technologies. 
+                    
+                  <br>
+                  <br>
+                  My goals have always been to 
                   be and do the best I can. I enjoy diverse yet unified collaboration and love working 
                   on a team that shares the same goals. My fear has never been that of failure, but 
                   that of stagnation and not performing and succeeding to the best of my abilities. 
 
-                    For the two years, I have been working on a special team to upgrade our contribution 
-                    accounting, enrollment, and eligibility system. My responsibilities on the project 
-                    have been gathering business requirements, communicating and documenting business 
-                    and functional requirements to our software vendor, analyzing and mapping data for 
-                    conversion, and testing the new system and functionality. We have been working with 
-                    Jira and in an agile environment. I have been grateful for this opportunity and look 
-                    forward to learning and growing even more in the future.</p>
+                    </p>
               </div>
              
             </div>
@@ -153,20 +160,49 @@
                   <li>Jira</li>
                   <li>SQL</li>
                   <li>Javascript</li>
-                  <li>Version Control (Git)</li>
+                  <li>Version Control <a href="https://github.com/wflooter480" target="_blank">(Git)</a></li>
                   <li>Python</li>
                 </ul>
                 <h3 id="education">Education</h3>
                   
                     <ul class="education-list">
-                      <li>'02 Bachelor's of Music in Flute Performance at <a href="cim.edu" target="_blank">The Cleveland Institute of Music</a></li>
-                      <li>'06 Master's of Music in Flute Performance at <a href="music.indiana.edu" target="_blank">Indiana University Jacobs School of Music</a></li>
+                      <li>'02 Bachelor's of Music in Flute Performance at <a href="https://cim.edu" target="_blank">The Cleveland Institute of Music</a></li>
+                      <li>'06 Master's of Music in Flute Performance at <a href="https://music.indiana.edu" target="_blank">Indiana University Jacobs School of Music</a></li>
                     </ul>
                 </div>
               </div>
           </div>
 
     </section>
+ <footer>
+    <div class="container" id="contact">
+        <div class="row">
+          <div class="col footer-btns">              
+              <a class="btn btn-secondary" href="assets/resume.pdf">My Resume</a>
+              <a class="btn btn-secondary" href="#header">Home</a>
+          </div>
+          <div class="col">
+            <div class="footer-links">
+              <h4>Drop me a line!</h4>
+              <p>wvbowden80@gmail.com </p>
+              <ul class="social-links">
+                  <li><a href="https://www.linkedin.com/in/whitney-bowden" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                  <li><a href="https://github.com/wflooter480" target="_blank"><i class="ion-social-github"></i></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+    </div>
+    <div class="container copyright">
+      <div class="row">
+        <div class="col col-copyright">
+           <p>
+             Copyright &copy; 2018 by Whitney Bowden. I did it!
+           </p>
+        </div>        
+      </div>
+    </div>
+ </footer>
 
     <script src="js/jquery.js"></script>
     <script src="js/popper.js" ></script>
