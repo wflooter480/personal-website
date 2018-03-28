@@ -17,6 +17,9 @@ $btn-border-radius: 0;
 @import "node_modules/bootstrap/scss/variables";
 @import "node_modules/bootstrap/scss/mixins";
 
+// Media Queries
+$wb-breakpoint-sm: map-get($grid-breakpoints, "sm");
+
 // Optional
 @import "node_modules/bootstrap/scss/reboot";
 @import "node_modules/bootstrap/scss/type";
@@ -24,10 +27,15 @@ $btn-border-radius: 0;
 @import "node_modules/bootstrap/scss/code";
 @import "node_modules/bootstrap/scss/grid";
 @import "node_modules/bootstrap/scss/alert";
+@import "node_modules/bootstrap/scss/dropdown";
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/tooltip";
 @import "node_modules/bootstrap/scss/buttons";
 @import "node_modules/bootstrap/scss/jumbotron";
+@import "node_modules/bootstrap/scss/nav";
+@import "node_modules/bootstrap/scss/navbar";
+
+
 
 /* Main Header */
 header {
@@ -39,41 +47,42 @@ header {
 }
 
 /* Main Navi */
-.wb-nav {
-  padding: 20px 30px;
+//  .wb-nav {
+//    padding: 20px 30px;
 
-  ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden; 
-  }
+//    ul {
+//    list-style-type: none;
+//    margin: 0;
+//    padding: 0;
+//    overflow: hidden; 
+//    }
 
-  li {
-    display: inline-block;
-    padding: 20px;
-    
-    a {
+//    li {
+//      display: inline-block;
+//      padding: 20px;
+         
+//      a {
       
-      &:link,
-      &:visited {
-        color: $light;
-        font-weight: 100;
-        padding: 8px 0;
-        text-decoration: none;
-        font-size: 120%;
-        border-bottom: 2px solid transparent;
-        transition: border-bottom 0.2s;
-      }
+//        &:link,
+//        &:visited {
+//          color: $light;
+//          font-weight: 100;
+//          padding: 8px 0;
+//          text-decoration: none;
+//          font-size: 120%;
+//          border-bottom: 2px solid transparent;
+//          transition: border-bottom 0.2s;
+//        }
 
-      &:hover, 
-      &:focus {
-          border-bottom: 2px solid $secondary;
-      }
-    }
-  }
+//        &:hover, 
+//        &:focus {
+//            border-bottom: 2px solid $secondary;
+//       }
+//     }
+//    }
 
-}
+//  }
+
 
 .wb-header {
   .jumbotron {
@@ -106,6 +115,9 @@ header {
 
     .about-title {
       margin-top: 50px;
+      // @media only screen and (max-width: $wb-breakpoint-sm) {
+       
+      // }
     }
 
     .about-p {
@@ -236,3 +248,13 @@ footer {
       
   }
 }
+
+// @media only screen and (max-width: $wb-breakpoint-sm) {
+//   h1 {
+//     color: #FF0000;
+
+//   }
+// }
+
+
+

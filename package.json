@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run clean && npm run copy && npm run compilecss && npm run transpile",
+    "build:prod": "npm run clean && npm run copy && npm run compilecss:prod && npm run transpile:prod",
     "clean": "rimraf dist",
     "compilecss": "node-sass --source-map true src/css/main.scss dist/css/main.css",
     "compilecss:prod": "node-sass src/css/main.scss dist/css/main.css",
