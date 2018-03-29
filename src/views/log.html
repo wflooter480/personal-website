@@ -1,93 +1,200 @@
 <!doctype html>
 <html lang="en">
   <head>
+    <!-- Required Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Nanum+Gothic:400,700" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link rel ="stylesheet" type= "text/css" href= "css/main.css">
     <title>Whitney's Blog</title>
    
   </head>
   
-  <body>
-    <section>January 7, 2018</section>
-      <p>
-        This is my first entry into my ongoing quest to learn how to code. This log is to serve as a quick look into what I have been learning. A couple days ago, I started my website in earnest.
-        I got my head wrapped around what Bootstrap is and does. And most importantly, how it can help me get a website up fairly quickly. When I took the html and css courses, everything was done from scratch ,
-        so this almost seemed like cheating. But I will not complain; it has been pretty handy so far. Today I played around with the background image and formatting the first section and nav bar. Honestly, if you had told me 4 months ago
-        I would know what any of this is, I would have laughed heartily. So, I'm pleased that this stuff doesn't look completely foreign to me. I was worried at first getting back to html and css as I have
-        been working with javascript for the past several weeks. And since before Christmas, I was really just focused on practicing writing functions. That's where my head has been, but I need to continue moving forward,
-        esspecially with this website. I want a career as a software developer - I think a website is not only a good way to put what I've learned into practice.
-      </br>
-        Here's to more log entries and a successful year transitioning into a new career!
-      </p>
+  <body class="log-body">
+      
+          <nav class="wb-nav">
+            <div class="d-flex justify-content-end">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="https://github.com/wflooter480" target="_blank">Github</a></li>
+                  <li><a href="assets/resume.pdf">Resume</a></li>
+                  <li><a href="#contact">Contact Me</a></li>
+              </ul>
+            </div>
+          </nav>       
 
-      <section>January 9, 2018</section>
-      <p>
-        Modulus Division!!
+    <div class="container log-content">
 
-        This is the Remainder operator : %
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0 entry-title">My First Blog Entry</h5>
+          <div class="entry-date">
+            <time>January 7, 2018</time>
+          </div>
+          <div class="entry-body">
+            <p>
+              This is my first entry into my ongoing quest to learn how to code. This log is to serve as a quick look into what I have been learning. A couple days ago, I started my website in earnest.
+              I got my head wrapped around what Bootstrap is and does. And most importantly, how it can help me get a website up fairly quickly. When I took the html and css courses, everything was done from scratch ,
+              so this almost seemed like cheating. But I will not complain; it has been pretty handy so far. Today I played around with the background image and formatting the first section and nav bar. Honestly, if you had told me 4 months ago
+              I would know what any of this is, I would have laughed heartily. So, I'm pleased that this stuff doesn't look completely foreign to me. I was worried at first getting back to html and css as I have
+              been working with javascript for the past several weeks. And since before Christmas, I was really just focused on practicing writing functions. That's where my head has been, but I need to continue moving forward,
+              esspecially with this website. I want a career as a software developer - I think a website is not only a good way to put what I've learned into practice.
+            </br>
+              Here's to more log entries and a successful year transitioning into a new career!
+            </p>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0 entry-title">Modulus Division</h5>    
+          <div class="entry-date">  
+            <time>January 9, 2018</time>
+          </div> 
+          <div class="entry-body">
+            <p>
+              Modulus Division!!
+    
+              This is the Remainder operator : %
+    
+              To calculate: Take two numbers. How many times does the second number 'go into' the first. Now, what remains?
+    
+              For example:
+    
+              2 % 2 // <u>0</u> ; 2 goes into 2 1 time, and <em>0</em> is remaining.
+              10 % 5 // <u>0</u> ; 5 goes into 10 2 times, and <em>0</em> is remaining.
+              9 % 5 // <u>4</u> ; 5 goes into 9 1 time, and <em>4</em> is remaining.
+              5 % 9 // <u>5</u> ; if the second number is larger than the first, than the first number is always the remainder.
+            </p>
+          </div>
+          <hr>
+        </div>
+      </div>
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0 entry-title">Basic JavaScript Principles</h5>
+          <div class="entry-date">
+            <time>January 10, 2018</time>
+          </div>
+          <div class="entry-body">
+            <p>
+              I'm lucky I have a nice Teaching Assistant. My husband Jeff! He's so nice!  Today I worked through a javascript assignment he gave me. I was to create two arrays containing (1)grocery list items and (2)store items each with properties such as name, quantity, and cost. Then I was to calculate the total cost of the items found at the store and
+              also log the items not found at the store. Sounds so easy, right? And the concepts were simple, but getting these nested for loops and if statements going, along with accessing multiple object properties was truly a challenge.
+    
+              But it is helping me solidify several basic javascript principles. Notably, how to access those properties inside Loops.
+    
+              <ol>Notes to self:
+                <li>Objects can go into arrays - no biggie!</li>
+                <li>For Loops can take multiple variables if needed to use throughout the rest of the function.</li>
+                <li>The Index Key in loops is, well, key! Calling Index Keys are fluid and increment as the loop runs. It's basically like not having to enter in a position (hard coding) when calling the array within the function.</li>
+                <li>To call an Array's Object's properties within a loop or function: myArray[myArrayIndex].property</li>
+                <li>Declare Global and Local variables wisely! Also related: create simple functions seperately (globally) to use within the larger (main) function.</li>
+                <li>Use parameters. They can be helpful. Start thinking about those as useful tools.</li>
+                <li>To add the cost of the items in a single log, I created a simple function separately called <em>totalCost</em> with two parameters; quantity and cost. Within the loop, I then called that function and wrote: totalCost <em>+=</em> costPerItem(myGroceryList[groceryListIndex].quantity, groceryStoreItems[groceryStoreItemsIndex].cost)  The <em>+=</em> operator automatically added the values.</li>
+                <li>Simplify!! Simplify!! It was inevitable; when I got stuck, I knew pretty much knew what needed to be done, but just didn't really know where things went and got myself all confused. Jeff would then use simple logic and leading questions: if this happens, then what? How do you call a function? How do you access this element?</li>
+              </ol>
+            </p>
+          </div>
+          <hr>
+        </div>
+      </div>
 
-        To calculate: Take two numbers. How many times does the second number 'go into' the first. Now, what remains?
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0 entry-title">Loops &amp; Iterators</h5>
+          <div class="entry-date">
+            <time>January 15, 2018</time>
+          </div>          
+          <div class="entry-body">
+            <p>Building on loops with Iterators.  .forEach()  .map()  .filter() are examples.  
+            <br>    
+              <ul>
+                <li>.forEach() is basically like writing a loop. It executes the same code on every element in an array. BUT it does NOT change the array and it returns <em>undefined</em>.</li>
+                <li>.map() executes the same code on every element in the array AND returns a NEW array with the updated elements. This would be like if I wanted another array of new prices for the same items</li>
+                <li>.filter() returns a new array by checking every element in the array to see if it is truthy based on the code criteria. If it's truthy, it goes into the new array. Like if I have an array (a list) of last names, and I want only the names that begin Bow...I slap this .filter method on and get a new array with those names meeting that criteria.</li>
+              </ul>
+            <br>
+              There's tons of other methods (or functions, I'm not exactly sure which term is correct as I've read/heard these iterators referred to as either). Here is a good reference tool: the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" target="_blank">Mozilla Developer Network</a>
+            </p>
+          </div>
+          <hr>
+        </div>
+      </div>
 
-        For example:
+      <div class="media">
+        <div class="media-body">
+          <h5 class="mt-0 entry-title">More Loops &amp; Iterators</h5>
+          <div class="entry-date">
+            <time>January 17, 2018</time>
+          </div>
+          <div class="entry-body">
+            <p>
+              After a couple days working through loops and iterators, I think I'm making progress.  My biggest challenge has been grasping what the parameters do and what they are. And especially, how to use them.
+              For example, using them while calling object properties in an array. The light bulb just went off with the .forEach in that the param IS the object's index. Guys, I was trying to call the index on the param. Not working. I did several practice problems today, first doing the for Loop, and then the same problem using iterators.
+            </br>
+              Anyways, still a lot of practice is needed, but I'm getting there...I think. 
+            </p>
+          </div>
+          <hr>
+        </div>
+      </div>
 
-        2 % 2 // <u>0</u> ; 2 goes into 2 1 time, and <em>0</em> is remaining.
-        10 % 5 // <u>0</u> ; 5 goes into 10 2 times, and <em>0</em> is remaining.
-        9 % 5 // <u>4</u> ; 5 goes into 9 1 time, and <em>4</em> is remaining.
-        5 % 9 // <u>5</u> ; if the second number is larger than the first, than the first number is always the remainder.
-      </p>
-
-      <section>January 10, 2018</section>
-      <p>
-        I'm lucky I have a nice Teaching Assistant. My husband Jeff! He's so nice!  Today I worked through a javascript assignment he gave me. I was to create two arrays containing (1)grocery list items and (2)store items each with properties such as name, quantity, and cost. Then I was to calculate the total cost of the items found at the store and
-        also log the items not found at the store. Sounds so easy, right? And the concepts were simple, but getting these nested for loops and if statements going, along with accessing multiple object properties was truly a challenge.
-
-        But it is helping me solidify several basic javascript principles. Notably, how to access those properties inside Loops.
-
-        <ol>Notes to self:
-          <li>Objects can go into arrays - no biggie!</li>
-          <li>For Loops can take multiple variables if needed to use throughout the rest of the function.</li>
-          <li>The Index Key in loops is, well, key! Calling Index Keys are fluid and increment as the loop runs. It's basically like not having to enter in a position (hard coding) when calling the array within the function.</li>
-          <li>To call an Array's Object's properties within a loop or function: myArray[myArrayIndex].property</li>
-          <li>Declare Global and Local variables wisely! Also related: create simple functions seperately (globally) to use within the larger (main) function.</li>
-          <li>Use parameters. They can be helpful. Start thinking about those as useful tools.</li>
-          <li>To add the cost of the items in a single log, I created a simple function separately called <em>totalCost</em> with two parameters; quantity and cost. Within the loop, I then called that function and wrote: totalCost <em>+=</em> costPerItem(myGroceryList[groceryListIndex].quantity, groceryStoreItems[groceryStoreItemsIndex].cost)  The <em>+=</em> operator automatically added the values.</li>
-          <li>Simplify!! Simplify!! It was inevitable; when I got stuck, I knew pretty much knew what needed to be done, but just didn't really know where things went and got myself all confused. Jeff would then use simple logic and leading questions: if this happens, then what? How do you call a function? How do you access this element?</li>
-        </ol>
-
-      </p>
-
-      <section>January 15, 2018</section>
-      <p>Building on loops with Iterators.  .forEach()  .map()  .filter() are examples.  
-<br>    <ul>
-        <li>.forEach() is basically like writing a loop. It executes the same code on every element in an array. BUT it does NOT change the array and it returns <em>undefined</em>.</li>
-        <li>.map() executes the same code on every element in the array AND returns a NEW array with the updated elements. This would be like if I wanted another array of new prices for the same items</li>
-        <li>.filter() returns a new array by checking every element in the array to see if it is truthy based on the code criteria. If it's truthy, it goes into the new array. Like if I have an array (a list) of last names, and I want only the names that begin Bow...I slap this .filter method on and get a new array with those names meeting that criteria.</li>
-        </ul>
-        <br>
-        There's tons of other methods (or functions, I'm not exactly sure which term is correct as I've read/heard these iterators referred to as either). Here is a good reference tool: the <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/every" target="_blank">Mozilla Developer Network</a>
-      </p>
-
-      <section>January 17, 2018</section>
-      <p>
-        After a couple days working through loops and iterators, I think I'm making progress.  My biggest challenge has been grasping what the parameters do and what they are. And especially, how to use them.
-        For example, using them while calling object properties in an array. The light bulb just went off with the .forEach in that the param IS the object's index. Guys, I was trying to call the index on the param. Not working. I did several practice problems today, first doing the for Loop, and then the same problem using iterators.
-      </br>
-        Anyways, still a lot of practice is needed, but I'm getting there...I think. 
-      </p>
-
-      <section>February 16, 2018</section>
-        <p>
-          It's been a little bit since I've logged what I've been doing, but it's been a lot! Really working on understanding some key SQL concepts, finishing up CSS. The CSS Grid is pretty cool!
-          Seems fairly intuitive. I can definitely see a rabbit hole with creating websites and applications. So many ideas and possibilities. Which brings me to my website. 
-          I think I got a little flustered because I could tell I was rushing it. I've pretty much started over on it. Making sure I have good coding and git practices. Jeff helped me get it set up with Bootstrap and Sass.
-          I've decided that I just don't like the bootstrap nav functionality and I was trying to use it, but didn't want it. So, it has been scrapped. There will be other elements of bootstrap that I will be using, like the jumbotron in the header. And form stuff. 
-          It's a pretty simple site, so not only is my website practical for employers and recruiters to get to know me and my work/style, this is a huge learning tool for me. Which is why I added Sass and some jquery. I can already tell that
-          I'm going to be chomping at the bit to build another website for myself for music students.
-        </p>
-        <p>
-          The biggest challenge I am facing right now, is feeling overwhelmed. I am learning so much and it feels like I have just begun understanding a blade of grass in this big wide world of web development. So much still seems
-          like "nerd magic". 
-        </p>
-     
-
+      <div class="media">
+        <div class="media-body">
+            <h5 class="mt-0 entry-title">Nerd Magic</h5>
+            <div class="entry-date">
+              <time>February 16, 2018</time>
+            </div>
+          <div class="entry-body">
+            <p>
+              It's been a little bit since I've logged what I've been doing, but it's been a lot! Really working on understanding some key SQL concepts, finishing up CSS. The CSS Grid is pretty cool!
+              Seems fairly intuitive. I can definitely see a rabbit hole with creating websites and applications. So many ideas and possibilities. Which brings me to my website. 
+              I think I got a little flustered because I could tell I was rushing it. I've pretty much started over on it. Making sure I have good coding and git practices. Jeff helped me get it set up with Bootstrap and Sass.
+              I've decided that I just don't like the bootstrap nav functionality and I was trying to use it, but didn't want it. So, it has been scrapped. There will be other elements of bootstrap that I will be using, like the jumbotron in the header. And form stuff. 
+              It's a pretty simple site, so not only is my website practical for employers and recruiters to get to know me and my work/style, this is a huge learning tool for me. Which is why I added Sass and some jquery. I can already tell that
+              I'm going to be chomping at the bit to build another website for myself for music students.
+            </p>
+            <p>
+              The biggest challenge I am facing right now, is feeling overwhelmed. I am learning so much and it feels like I have just begun understanding a blade of grass in this big wide world of web development. So much still seems
+              like "nerd magic". 
+            </p>
+          </div>
+          <hr>
+        </div>
+      </div>
+    </div>
+      <footer>
+            <div class="container" id="contact">
+                <div class="row">
+                  <div class="col footer-btns">              
+                      <a class="btn btn-secondary" href="assets/resume.pdf">My Resume</a>
+                      <a class="btn btn-secondary" href="index.html">Home</a>
+                  </div>
+                  <div class="col">
+                    <div class="footer-links">
+                      <h4>Drop me a line!</h4>
+                      <p>wvbowden80@gmail.com </p>
+                      <ul class="social-links">
+                          <li><a href="https://www.linkedin.com/in/whitney-bowden" target="_blank"><i class="ion-social-linkedin"></i></a></li>
+                          <li><a href="https://github.com/wflooter480" target="_blank"><i class="ion-social-github"></i></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="container copyright">
+              <div class="row">
+                <div class="col col-copyright">
+                   <p>
+                     Copyright &copy; 2018 by Whitney Bowden. I did it!
+                   </p>
+                </div>        
+              </div>
+            </div>
+      </footer>
   </body>
 
   </html>
